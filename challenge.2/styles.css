@@ -1,0 +1,22 @@
+header {
+   text-align: center;
+}
+body {
+    margin: 0;
+}
+.circles {
+    border-radius: 300px;
+    width: 300px;
+    border: 15px solid rgb(61, 61, 61);
+    margin: 50px;
+}
+div {
+    background-color: grey;
+    height: 40vh;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#hero {
+    height: 60vh;
+    width: 100vw;
+}
