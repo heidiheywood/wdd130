@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+h2 {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    margin: 0;
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 body { 
     background-color: #22387a;
+    font-family: "Lora", Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
 }
 header {
-    background-color: #ffffff;
+    background-color: #f2be4a;
 }
 nav, a:hover {
     background-color: #f2be4a;
@@ -15,9 +24,13 @@ nav, a:hover {
 nav, a {
     color: #1c1e1e;
     text-decoration: none;
+    padding: 35px;
 }
 .home-title {
     color: #ffffff;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 #hero {
     text-align: center;
@@ -31,11 +44,17 @@ nav, a {
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 .msg h2 {
     color: #ffffff
 }
+
 .msg p {
     color:#ffffff;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 #background {
     height: 725px;
@@ -44,6 +63,10 @@ main section {
     background-color: #f2be4a;
     color: #22387a;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     color: #ffffff; 
@@ -54,9 +77,13 @@ main section {
 .msg {
     background-color: #1c1e1e;
     color: #d9dbdb;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
     background-color: #1c1e1e;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color: #ffffff;
@@ -65,11 +92,15 @@ footer a {
 footer a:hover {
     color:#1c1e1e;
 }
+#logo-link {
+    padding-top: 5px;
+}
 .logo {
     width: 80px;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -79,5 +110,14 @@ footer p {
     color:#ffffff
 }
 footer p a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #1c1e1e;
 }
