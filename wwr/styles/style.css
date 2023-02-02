@@ -17,7 +17,7 @@ body {
 header {
     background-color: #f2be4a;
 }
-nav, a:hover {
+nav a:hover {
     background-color: #f2be4a;
     color:#ffffff
 }
@@ -50,7 +50,6 @@ main section img {
 .msg h2 {
     color: #ffffff
 }
-
 .msg p {
     color:#ffffff;
     font-size: .8em;
@@ -90,7 +89,7 @@ footer a {
     text-decoration: none;
 }
 footer a:hover {
-    color:#1c1e1e;
+    color: #f2be4a;
 }
 #logo-link {
     padding-top: 5px;
@@ -105,6 +104,9 @@ footer a:hover {
 #hero-img {
     width: 100%;
 }
+.mountains {
+    margin: 50px 0;
+}
 footer p {
     font-size: 1.2em;
     color:#ffffff
@@ -112,7 +114,7 @@ footer p {
 footer p a:hover {
     text-decoration: none;
 }
-footer .social img {
+footer .social {
     padding-top: 15px;
 }
 .rivers-card, .camping-card, .rapids-card {
