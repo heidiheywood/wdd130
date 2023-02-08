@@ -1,0 +1,28 @@
+#grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightpink;
+}
+img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    width: 100%;
+    background-color: white;
+}
+h1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 14em;
+    z-index: 1;
+    letter-spacing: 20px;
+}
+h2 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-size: 5em;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .5em;
+}
