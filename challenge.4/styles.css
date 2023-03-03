@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #313639;
+}
+.image {
+    width: 100%;
+    overflow: hidden;
+}
+#article-post {
+    grid-column: 2;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+h2 {
+    font-size: 16px;
+    color: #779ecb;
+}
+h1 {
+    font-weight: 900;
+}
+p {
+    margin: 30px;
+}
+#footer {
+    background-color:#779ecb;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

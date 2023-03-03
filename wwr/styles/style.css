@@ -88,7 +88,7 @@ main section img {
 }
 .book, .join {
     background-color: #f2be4a;
-    color: #22387a;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
@@ -97,6 +97,7 @@ main section img {
 }
 .book:hover, .join:hover {
     color: #ffffff; 
+    background-color: #22387a;
 }
 #background {
     background-color: #f2be4a;
@@ -180,6 +181,53 @@ footer .social {
 .rapids-card {
     grid-column: 8/10;
     grid-row: 2/3;
+}
+/*This is the css for the rivers page*/
+#river-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.river-grid {
+    grid-column: 2/7;
+    text-align: center;
+    background-color: #ffffff;
+}
+#rivers-heading {
+   font-size: 40px; 
+}
+.title-of-river {
+    font-size: 25px;
+    margin: 15px;
+    color: #22387a;
+}
+.description-of-river {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#large-rafting-image {
+    width: 90%;
+}
+.rafting-images {
+    width: 50%;
+}
+.sign-up-button {
+    font-family: "Lora", Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    background-color: #f2be4a;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+}
+.sign-up-button:hover {
+    color: #ffffff; 
+    background-color: #22387a;
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
