@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Care</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <a id="logo-link" href="index.html">
+            <img class="logo-img" src="img/mindfull-logo-1.png" alt="Mindfull Logo">
+        </a>
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="coping.html">Coping Strategies</a>
+            <a href="self-care.html" class="active">For You</a>
+        </nav> 
+        <style>
+            * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        background-color: #ffffff;
+        padding: 20px;
+        font-family: Arial;
+      }
+      
+      /* Center website */
+      .main {
+        max-width: 1000px;
+        margin: auto;
+      }
+      
+      h1 {
+        font-size: 50px;
+        word-break: break-all;
+      }
+      
+      .row {
+        margin: 8px -16px;
+      }
+      
+      /* Add padding BETWEEN each column (if you want) */
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
+      
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        display: none; /* Hide columns by default */
+      }
+      
+      /* Clear floats after rows */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Content */
+      .content {
+        background-color: white;
+        padding: 10px;
+      }
+      
+      /* The "show" class is added to the filtered elements */
+      .show {
+        display: block;
+      }
+      
+      /* Style the buttons */
+      .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: white;
+        cursor: pointer;
+      }
+      
+      /* Add a grey background color on mouse-over */
+      .btn:hover {
+        background-color: #ddd;
+      }
+      
+      /* Add a dark background color to the active button */
+      .btn.active {
+        background-color: #666;
+         color: white;
+      }
+        </style>
+    </header>
+    <h1>Take Time to Care for You</h1>
+    <h2>Don't feel like you need to do all of these every day or week. These are best used in balance with our other responsibilities and roles that we fill.</h2>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('outside')"> Outside</button>
+        <button class="btn" onclick="filterSelection('at home')"> At Home</button>
+        <button class="btn" onclick="filterSelection('people')"> People</button>
+      </div>
+      
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column outside">
+          <div class="content">
+            <img src="img/woman-hiking.jpg" alt="woman-hiking" style="width:100%">
+            <h4>Go For a Hike</h4>
+            <p>Make sure to bring water!</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+            <img src="img/friends.jpg" alt="friends walking on beach" style="width:100%">
+            <h4>Meet Up With Friends</h4>
+            <p>This can give you something to look forward to.</p>
+          </div>
+        </div>
+        <div class="column at home">
+          <div class="content">
+            <img src="img/bath.jpg" alt="taking-a-bath" style="width:100%">
+            <h4>Relax in a Bubble Bath</h4>
+            <p>I enjoy having showers as a reset for me as well.</p>
+          </div>
+        </div>
+      
+        <div class="column at home">
+          <div class="content">
+            <img src="img/journal-writing.jpg" alt="writing-in-journal" style="width:100%">
+            <h4>Write Your Thoughts Down</h4>
+            <p>Sometimes in order to process things better we need to get them out of our heads.</p>
+          </div>
+        </div>
+        <div class="column at home">
+          <div class="content">
+            <img src="img/painting.jpg" alt="woman-painting" style="width:100%">
+            <h4>Pull Out Some Paint</h4>
+            <p>It doesn't need to be a masterpiece just have fun.</p>
+          </div>
+        </div>
+        <div class="column at home">
+          <div class="content">
+            <img src="img/dancing-on-the-couch.jpg" alt="dancing on the couch" style="width:100%">
+            <h4>Have a Dance Party With Yourself</h4>
+            <p>I think everyone should have a mini dance party at least once a day.</p>
+          </div>
+        </div>
+        <div class="column outside">
+          <div class="content">
+            <img src="img/woman-biker.jpg" alt="woman-biking" style="width:100%">
+            <h4>Hop on a Bike</h4>
+            <p>Exercise is a great way to recharge, reset and get some endorphins in your system.</p>
+          </div>
+        </div>
+      
+        <div class="column at home">
+          <div class="content">
+            <img src="img/yoga-position.jpg" alt="woman in a yoga position" style="width:100%">
+            <h4>Follow a Yoga Tutorial</h4>
+            <p>Beginner or advanced, enjoy wherever you're at.</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+            <img src="img/two-men-laughing.jpg" alt="two-men-laughing" style="width:100%">
+            <h4>Chat With a Friend</h4>
+            <p>Do it. They'll appreciate hearing from you.</p>
+          </div>
+        </div>
+        <div class="column at home">
+          <div class="content">
+            <img src="img/funny-dog-pic.jpg" alt="funnd-dog-pic" style="width:100%">
+            <h4>Watch Funny Animal Videos</h4>
+            <p>It is incredible how much happiness watching cute animals can bring.</p>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+          <footer>
+              <img src="img/mindfull-logo-1.png" alt="Mindfull Logo">
+              <p>Simple branding statement</p>
+              <a href="site-plan.html">Site Plan</a>
+              <p>Copyright @ Mindfull 2023</p>
+          </footer>
+          <script>
+              filterSelection("all") // Execute the function and show all columns
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+      
+      // Show filtered elements
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+      
+      // Hide elements that are not selected
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+        </script>
+</body>
+</html>

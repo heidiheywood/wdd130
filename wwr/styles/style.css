@@ -117,13 +117,12 @@ main section img {
 footer {
     background-color: #1c1e1e;
     padding: 25px 50px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: space-between;
+    text-align: center;
+    justify-content: space-evenly;
 }
 footer a {
     color: #ffffff;
