@@ -6,65 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coping Strategies</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <style>
-      /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-background-color: transparent;
-width: 60%;
-height: 300px;
-border: 1px solid #f1f1f1;
-perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-position: relative;
-width: 100%;
-height: 100%;
-text-align: center;
-transition: transform 0.8s;
-transform-style: preserve-3d;
-}
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-transform: rotateY(180deg);
-}
-/* Position the front and back side */
-.flip-box-front, .flip-box-back {
-position: absolute;
-width: 100%;
-height: 100%;
--webkit-backface-visibility: hidden; /* Safari */
-backface-visibility: hidden;
-}
-/* Style the front side */
-.flip-box-front {
-background-color: #f1f1f1;
-color: black;
-}
-/* Style the back side */
-.flip-box-back {
-background-color: #333;
-color: white;
-transform: rotateY(180deg);
-}
-.flip-box:hover .flip-box-inner {
-transform: rotateX(180deg);
-}
-.flip-box-back {
-transform: rotateX(180deg);
-}
-  </style>
 </head>
 <body>
   <header>
       <nav class="topnav">
         <a id="logo-link" href="index.html">
-          <img class="logo-img" src="img/mindfull-logo-1.png" alt="Mindfull Logo">Mindfull</a>
+          <img class="logo-img" src="img/mindfull-logo-1.png" alt="Mindfull Logo"></a>
         <a href="coping.html" class="active">Coping Strategies</a>
         <a href="self-care.html">For You</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
-          <img src="img/hamburger.png">
+          <img src="img/hamburger.png" alt="menu icon">
         </a>
       </nav>
     </header>
@@ -97,7 +49,6 @@ transform: rotateX(180deg);
             <h2>Belly Breathing</h2>
             <iframe class="videos" width="448" height="252" src="https://www.youtube.com/embed/OXjlR4mXxSk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe class="videos" width="448" height="252" src="https://www.youtube.com/embed/92xTPH7OtLs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="448" height="252" src="https://www.youtube.com/embed/a7uQXDkxEtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -130,5 +81,6 @@ transform: rotateX(180deg);
         <p>Learn to manage stress instead of stress managing you.</p>
         <img class="logo-img" src="img/mindfull-logo-1.png" alt="Mindfull Logo">
     </footer>
+    </main>
 </body>
 </html>
