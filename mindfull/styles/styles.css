@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&display=swap');
 /*@import url("C:\Users\19283\Documents\Heidi BYUI\Winter 23\wdd130\mindfull\img\hamburger.png");*/
 /* Add a black background color to the top navigation */
+/* :root {
+  --ff-body:  "Archivo Narrow", Helvetica, sans-serif;
+  --ff-heading: "Julius Sans One", Helvetica, sans-serif;
+
+  --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+ }*/
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -55,26 +61,27 @@ main {
 #hero {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  height: 70vh;
+  max-height: 80vh;
 }
 #hero-img {
  grid-column: 3/4;
  grid-row: 1/6;
- height: 70vh;
+ max-height: 80vh
 }
 #hero-header {
   grid-column: 4/7;
-  grid-row: 1;
+  grid-row: 1/2;
+  /*width: 30vw;*/
   margin: 0 auto;
   margin-top: 40px;
   margin-left: 30px;
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 .hero-message {
   grid-column: 4/7;
   grid-row: 2/3;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 4em;
+  padding-right: 4em;
   font-size: 1.2vw;
   margin: 0 auto;
   margin-top: 15px;
@@ -82,8 +89,8 @@ main {
 .hero-message-2 {
   grid-column: 4/7;
   grid-row: 3/4;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 4em;
+  padding-right: 4em;
   font-size: 1.2vw;
 }
 button {
@@ -92,7 +99,7 @@ button {
   color: #fff;
   padding: 10px 10px;
   font-size: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
   align-content: center;
   transition: transform .5s;
 }
@@ -108,20 +115,23 @@ button:hover {
   display: grid;
   grid-template-columns: 3fr .25fr 2fr 1fr;
   background-color: #333;
+  max-height: 70vh;;
 }
 #dancing-img {
   grid-column: 3/5;
   grid-row: 1/7;
-  width: 25vw;
+  max-height: 70vh;
 }
 .section-2 {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr;
 }
 #header-section-2 {
+  margin-top: 1em;
   grid-column: 3/5;
   grid-row: 1/4;
-  width: 30vw;
+  width: 27vw;
+  font-size: 3em;
   color: #fff;
 }
 #message-section-2{
@@ -135,7 +145,7 @@ button:hover {
 #learn-more-2{
   grid-column: 4;
   grid-row: 6;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 #battery-section {
   display: grid;
